@@ -2,76 +2,88 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <title>Carrossel de Estampas</title>
+  <title>Carrossel da Loja</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Swiper CSS -->
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <style>
-  body {
-    margin: 0;
-    background: transparent;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .swiper {
-    width: 80%;
-    height: 90%;
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  }
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-  }
-  .swiper-slide img {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  .swiper-pagination-bullets {
-    bottom: 10px !important;
-  }
+    body {
+      margin: 0;
+      background: transparent;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      height: 100vh;
+      font-family: sans-serif;
+    }
 
-  /* 🔵 Cor personalizada da bolinha ativa */
-  .swiper-pagination-bullet-active {
-    background-color: #21ff01 !important;
-  }
-</style>
+    /* TÍTULO !loja */
+    .titulo {
+      margin-top: 10px;
+      background-color: #3b2246; /* roxo */
+      color: #21ff01; /* verde-limão */
+      font-size: 2em;
+      font-weight: bold;
+      padding: 5px 20px;
+      border-radius: 20px;
+      font-family: "Arial Hebrew", sans-serif;
+    }
 
+    .swiper {
+      width: 80%;
+      height: 85%;
+      margin-top: 10px;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #fff;
+    }
+
+    .swiper-slide img {
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+
+    .swiper-pagination-bullets {
+      bottom: 10px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: #21ff01 !important;
+    }
+  </style>
 </head>
 <body>
-  <!-- Swiper -->
+
+  <!-- TÍTULO -->
+  <div class="titulo">!loja</div>
+
+  <!-- CARROSSEL -->
   <div class="swiper">
     <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa01.png" alt="Estampa 01" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa02.png" alt="Estampa 02" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa03.png" alt="Estampa 03" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa04.png" alt="Estampa 04" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa05.png" alt="Estampa 05" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa06.png" alt="Estampa 06" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa07.png" alt="Estampa 07" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa08.png" alt="Estampa 08" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa09.png" alt="Estampa 09" /></div>
-      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa10.png" alt="Estampa 10" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa01.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa02.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa03.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa04.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa05.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa06.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa07.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa08.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa09.png" /></div>
+      <div class="swiper-slide"><img src="https://raw.githubusercontent.com/cavaquinhoeviolao/loja/main/estampa10.png" /></div>
     </div>
-    <!-- Bolinhas -->
     <div class="swiper-pagination"></div>
   </div>
 
-  <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-  <!-- Configuração do Swiper -->
   <script>
     const swiper = new Swiper('.swiper', {
       loop: true,
@@ -89,4 +101,3 @@
   </script>
 </body>
 </html>
-
